@@ -19,7 +19,13 @@
                     <p>Precio: <b id="precio-foto">3000</b></p>
                 </div>
                 <div class="boton-formulario">
-                    <input type="button" value="Calcular" class="boton-input">
+                    <button class="boton-input" onclick="
+                    cantidadSolicitada = document.querySelector('#numero-pedido')
+                    totalFormula = 3000 * cantidadSolicitada
+                    tomarColorForm = document.querySelector('#color-pedido').value;
+                    colorFondoDiv = document.querySelector('.color-resultado')
+                    colorFondoDiv.style.backgroundColor = tomarColorForm
+                    ">Calcular</button>
                 </div>
                 
             </div>
@@ -28,7 +34,7 @@
         <div class="information">
             <h2>Total: <b id="resultado-total"></b></h2>
             <h2>Cantidad: <b id="resultado-cantidad"></b></h2>
-            <h2>Color: <b id="nombre-color"></b></h2>
+            <h2>Color: </h2>
             <div class="color-resultado"></div>
         </div>
     </div>

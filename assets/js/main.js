@@ -1,8 +1,3 @@
-let cantidad = 0;
-let color;
-let precioFoto = document.querySelector('#numero-pedido');
-let resultadoCantidad = cantidad * Number(precioFoto);
-let resultadoColor;
-
-imprimirResultadoCantidad = document.querySelector('#resultado-total');
-imprimirResultadoCantidad.innerHTML = precioFoto;
+solicitudFotos = document.querySelector('#numero-pedido').value;
+imprimirCantidad = document.querySelector('#resultado-cantidad');
+imprimirCantidad.innerHTML = solicitudFotos;
