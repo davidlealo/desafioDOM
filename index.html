@@ -20,8 +20,13 @@
                 </div>
                 <div class="boton-formulario">
                     <button class="boton-input" onclick="
-                    cantidadSolicitada = document.querySelector('#numero-pedido')
+                    
+                    cantidadSolicitada = document.querySelector('#numero-pedido').value
+                    imprimirCantidad = document.querySelector('#resultado-cantidad')
+                    imprimirCantidad.innerHTML = cantidadSolicitada
                     totalFormula = 3000 * cantidadSolicitada
+                    imprimirTotal = document.querySelector('#resultado-total')
+                    imprimirTotal.innerHTML = totalFormula
                     tomarColorForm = document.querySelector('#color-pedido').value;
                     colorFondoDiv = document.querySelector('.color-resultado')
                     colorFondoDiv.style.backgroundColor = tomarColorForm
